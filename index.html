@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" ng-app="week1">
+  <head>
+    <meta charset="utf-8">
+    <title>Module-1 coding assignment</title>
+    <script src="angular.js"></script>
+    <script src="week1Controller.js"></script>
+  </head>
+  <body>
+      <div ng-controller="textboxController">
+        <label for="lunchItem">Enter the usual lunch Item(Do not enter empty item):</label>
+        <input type="text" id="lunchItem" ng-model="lunchItem" >
+        <button id="ValidateLunch" ng-click="validateLunch()">Check If Too Much</button>
+        <p>{{feedback}}</p>
+      </div>
+  </body>
+</html>
